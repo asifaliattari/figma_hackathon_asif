@@ -96,7 +96,7 @@ export default function Menu() {
               src="/images/combined.png?height=600&width=400"
   
               alt="Featured dish"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover "
               width={400}
               height={600}
               priority

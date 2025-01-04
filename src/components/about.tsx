@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react'
+import Image from 'next/image'
 
 export default function AboutSection() {
   return (
@@ -38,7 +39,7 @@ export default function AboutSection() {
           {/* Right Images */}
           <div className="space-y-4">
             <div className="rounded-lg overflow-hidden">
-              <img
+              <Image
                 src="/images/about1.png?height=330&width=660"
                 alt="Delicious toast with egg and avocado"
                 className="w-full h-auto object-cover"
@@ -48,7 +49,7 @@ export default function AboutSection() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-lg overflow-hidden">
-                <img
+                <Image
                   src="/images/about2.png?height=194&width=322"
                   alt="Grilled dish with sauce"
                   className="w-full h-auto object-cover"
@@ -57,7 +58,7 @@ export default function AboutSection() {
                 />
               </div>
               <div className="rounded-lg overflow-hidden">
-                <img
+                <Image
                   src="/images/about3.png?height=194&width=322"
                   alt="Fresh sandwich"
                   className="w-full h-auto object-cover"
@@ -71,9 +72,6 @@ export default function AboutSection() {
       </div>
     </section>
 // food section-------------
-
-
-
   )
 }
 

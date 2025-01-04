@@ -1,9 +1,9 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Clock, Facebook, Twitter, Instagram, Youtube, PinIcon as Pinterest } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebookF,FaTwitter,FaInstagram,FaYoutube,FaPinterest } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -40,14 +40,16 @@ export default function Footer() {
             <p className="text-gray-300 text-sm">
               Corporate clients and leisure travelers rely on us for dependable, safe, and professional chauffeured car service in major cities across the world.
             </p>
-            <div className="bg-[#FF9F0D] p-4 rounded flex items-center gap-4">
-              <Clock className="w-6 h-6" />
-              <div>
-                <h4 className="font-medium">Opening Hours</h4>
-                <p className="text-sm">Mon - Sat (8:00 - 18:00)</p>
-                <p className="text-sm">Sunday - Closed</p>
-              </div>
-            </div>
+            <div className="w-[244px] h-[74px] flex items-center gap-4">
+  <button className="w-[70px] h-[60px] p-4 rounded flex items-center justify-center bg-[#FF9F0D]">
+    <Image src="/images/clocktimer.png" alt="icontimer" width={39} height={39} />
+  </button>
+  <div>
+    <h4 className="text-[18px] font-semibold">Opening Hours</h4>
+    <p className="text-[14px]">Mon-Sat (8:00-18:00)</p>
+    <p className="text-[14px]">Sunday - Closed</p>
+  </div>
+</div>
           </div>
 
           {/* Useful Links */}
@@ -109,7 +111,7 @@ export default function Footer() {
             Copyright © 2022 by Ayeman. All Rights Reserved.
           </p>
           <div className="flex gap-4">
-            {[Facebook, Twitter, Instagram, Youtube, Pinterest].map((Icon, i) => (
+            {[FaFacebookF, FaTwitter, FaInstagram , FaYoutube, FaPinterest].map((Icon, i) => (
               <Link
                 key={i}
                 href="#"

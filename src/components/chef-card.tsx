@@ -46,28 +46,19 @@ export default function ChefSection() {
     {
       name: "W.Readfroad",
       role: "Chef",
-      image: "/images/Card4.png?height=291&width=212",
+      image: "/images/Card4.png?height=391&width=312",
     },
   ]
 
   return (
-    <section className="relative w-full max-w-[1764px] mx-auto px-4 py-16 bg-black overflow-hidden">
-      {/* <div className="absolute left-0 top-0 w-[300px]">
-        <Image
-          src="/placeholder.svg?height=600&width=400"
-          alt="Decorative leaf"
-          width={400}
-          height={600}
-          className="object-contain"
-        />
-      </div> */}
-      
+    <section className="relative w-full max-w-[1764px] mx-auto px-2 py-2 bg-black overflow-hidden">
+         
       <div className="text-center mb-12">
         <span className="font-['Great_Vibes'] text-[32px] text-[#FF9F0D]">Chefs</span>
         <h2 className="text-[48px] font-bold text-[#FF9F0D] mt-2">Meet Our Chef</h2>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-2 ">
         {chefs.map((chef) => (
           <ChefCard key={chef.name} {...chef} />
         ))}
@@ -81,6 +72,17 @@ export default function ChefSection() {
           See More
         </Button>
       </div>
+
+         {/* Decorative Image */}
+            <div className="absolute right-0 bottom-0 w-1/3 h-1/2 opacity-80">
+              <Image
+                src="/images/decor2.png?height=531&width=409"
+                width={409}
+                height={531}
+                alt="Decoretive Image"
+                className="w-full h-full object-cover transform -rotate-12"
+              />
+            </div>
     </section>
   )
 }

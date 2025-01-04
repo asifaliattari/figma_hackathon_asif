@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 export default function FoodCategory() {
     return (
       <section className="max-w-8.6xl mx-auto px-6 lg:px-16 py-16 bg-black">
@@ -17,9 +17,10 @@ export default function FoodCategory() {
           {/* First Card with Special Label */}
           <div className="relative group">
             <div className="relative overflow-hidden rounded-lg">
-              <img
+              <Image
                 src="/images/food1.png?height=329&width=306"
                 alt="Plated dish"
+                height={329} width={306}
                 className="w-full h-[329px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute bottom-6 left-4 space-y-2">
@@ -36,9 +37,10 @@ export default function FoodCategory() {
           {/* Burger Card */}
           <div className="relative group">
             <div className="relative overflow-hidden rounded-lg">
-              <img
+              <Image
                 src="/images/food2.png?height=329&width=306"
                 alt="Gourmet burger"
+                height={329} width={306}
                 className="w-full h-[329px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
               />
             </div>
@@ -47,9 +49,10 @@ export default function FoodCategory() {
           {/* Salad Card */}
           <div className="relative group">
             <div className="relative overflow-hidden rounded-lg">
-              <img
+              <Image
                 src="/images/food3.png?height=329&width=306"
                 alt="Healthy salad"
+                height={329} width={306}
                 className="w-full h-[329px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
               />
             </div>
@@ -58,9 +61,10 @@ export default function FoodCategory() {
           {/* Donuts Card */}
           <div className="relative group">
             <div className="relative overflow-hidden rounded-lg">
-              <img
+              <Image
                 src="/images/food4.png?height=329&width=306"
                 alt="Stacked donuts"
+                height={329} width={306}
                 className="w-full h-[329px] object-cover rounded-lg transition-transform duration-300 group-hover:scale-110"
               />
             </div>

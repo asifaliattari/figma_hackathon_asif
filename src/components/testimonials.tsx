@@ -23,7 +23,10 @@ export default function Testimonials() {
             <Image
               src="/images/testimonial.png?height=96&width=96"
               alt="Profile"
+              width={96}
+              height={96}
               className="w-full h-full object-cover"
+              
             />
           </div>
         </div>
@@ -76,7 +79,9 @@ export default function Testimonials() {
       <div className="absolute right-0 bottom-0 w-1/3 h-1/2 opacity-80">
         <Image
           src="/images/decorimg.png?height=300&width=400"
-          alt=""
+          width={400}
+          height={300}
+          alt="Decoretive Image"
           className="w-full h-full object-cover transform -rotate-12"
         />
       </div>

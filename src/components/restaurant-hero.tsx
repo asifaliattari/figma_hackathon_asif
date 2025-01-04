@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Play } from 'lucide-react'
 
+
 export default function RestaurantHero() {
   return (
     <div className="relative h-[558px] w-full bg-black bg-no-repeat bg-center overflow-hidden"
@@ -9,14 +10,7 @@ export default function RestaurantHero() {
       backgroundImage: "url('/images/restend.png?height=558&width=959')",
       backgroundBlendMode: "overlay",
     }}>
-      {/* Left side - Food Image */}
-      {/* <div className="absolute left-0 top-0 h-full w-1/2">
-        <img
-          src="/images/restend.png?height=558&width=959"
-          alt="Delicious food dish with chicken and vegetables"
-          className="h-full w-full object-cover"
-        />
-      </div> */}
+ 
 
       {/* Right side - Content */}
       <div 
