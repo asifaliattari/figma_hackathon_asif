@@ -15,6 +15,7 @@ import BlogSection from "@/components/blog";
 export default function Home() {
   return (
   <>
+  <div className="overflow-x-hidden">
   <Header/>
   <AboutSection/>
   <FoodCategory/>
@@ -26,6 +27,7 @@ export default function Home() {
   <RestaurantHero/>
   <BlogSection/>
   <Footer/>
+  </div>
     </>
   );
 }
