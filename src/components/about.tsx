@@ -18,6 +18,7 @@ export default function AboutSection() {
               vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.
             </p>
             <ul className="space-y-4">
+              {/* use {['a', 'b', 'c'].map((item, index) => <span key={index}>{item}</span>)}*/}
               {[
                 "Lacus nisi, et ac dapibus sit eu velit in consequat.",
                 "Quisque diam pellentesque bibendum non dui volutpat fringilla",

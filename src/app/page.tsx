@@ -1,3 +1,5 @@
+
+
 import AboutSection from "@/components/about";
 import StatsSection from "@/components/clients";
 import FoodCategory from "@/components/food-category";
@@ -12,11 +14,16 @@ import BlogSection from "@/components/blog";
 
 
 
+
+
+
+
 export default function Home() {
   return (
-  <>
+
   <div className="overflow-x-hidden">
   <Header/>
+
   <AboutSection/>
   <FoodCategory/>
   <WhyChooseUs/>
@@ -28,6 +35,6 @@ export default function Home() {
   <BlogSection/>
   <Footer/>
   </div>
-    </>
+    
   );
 }

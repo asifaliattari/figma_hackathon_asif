@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import {  Search, ShoppingBag} from 'lucide-react'
 import { Great_Vibes } from 'next/font/google'
+import Link from 'next/link';
 
 const greatVibes = Great_Vibes({
-  subsets: ['latin'], // Optional: specify subsets if needed
-  weight: '400', // "Great Vibes" only supports 400 weight
-  display: 'swap', // Use swap for better font loading
+  subsets: ['latin'], 
+  weight: '400', 
+  display: 'swap', 
 });
 
 
@@ -26,22 +27,22 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Navigation */}
         <nav className="relative pt-8 pb-4  text-white">
-  {/* Logo Section Centered at the Top */}
+  
   <div className="absolute left-1/2 transform -translate-x-1/2 text-2xl font-bold text-[#FF9F0D]">
     Foodtuck
   </div>
   
   {/* Main Menu Section */}
   <div className="flex items-center justify-between mt-8 px-4">
-    <div className="hidden md:flex items-center space-x-6">
-      <a href="#" className="text-white hover:text-[#FF9F0D]">Home</a>
-      <a href="#" className="text-white hover:text-[#FF9F0D]">Menu</a>
-      <a href="#" className="text-white hover:text-[#FF9F0D]">Blog</a>
-      <a href="#" className="text-white hover:text-[#FF9F0D]">Pages</a>
-      <a href="#" className="text-white hover:text-[#FF9F0D]">About</a>
-      <a href="#" className="text-white hover:text-[#FF9F0D]">Shop</a>
-      <a href="#" className="text-white hover:text-[#FF9F0D]">Contact</a>
-    </div>
+  <div className="hidden md:flex items-center space-x-6">
+    <Link href="/" className="text-white hover:text-[#FF9F0D]">Home</Link>
+    <Link href="/menu" className="text-white hover:text-[#FF9F0D]">Menu</Link>
+    <Link href="/blog" className="text-white hover:text-[#FF9F0D]">Blog</Link>
+    <Link href="/pages" className="text-white hover:text-[#FF9F0D]">Pages</Link>
+    <Link href="/about" className="text-white hover:text-[#FF9F0D]">About</Link>
+    <Link href="/shop" className="text-white hover:text-[#FF9F0D]">Shop</Link>
+    <Link href="/contact" className="text-white hover:text-[#FF9F0D]">Contact</Link>
+  </div>
     
     <div className="flex items-center space-x-4">
       <div className="relative">
